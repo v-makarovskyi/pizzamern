@@ -1,0 +1,106 @@
+.productcreatepage {
+  padding: 10px 30px;
+  position: relative;
+
+  .goback {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    background: yellow;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .container {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      margin-bottom: 35px;
+      font-size: 24px;
+      font-weight: 500;
+      color: rgb(105, 62, 5);
+    }
+
+    form {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+
+      .formGroup {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+ p {
+            margin-bottom: 5px;
+          font-size: 14px;
+          color: rgb(105, 62, 5);
+          }
+        .sizeContainer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+         
+
+          &.exactsize {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 25px;
+            label {
+              margin-right: 5px;
+            }
+          }
+        }
+
+        label {
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: rgb(105, 62, 5);
+        }
+
+        input {
+          margin-bottom: 7px;
+          padding: 0 5px;
+          height: 38px;
+          border: 0.5px solid lightgray;
+          border-radius: 3px;
+        }
+        #image-file {
+          margin-top: 20px;
+          color: rgb(105, 62, 5);
+          border: none;
+        }
+
+        #desc {
+          height: 38px;
+        }
+      }
+      button {
+        align-self: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 50%;
+        height: 38px;
+        border: none;
+        border-radius: 3px;
+        background: rgb(52, 179, 52);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

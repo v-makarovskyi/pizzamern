@@ -1,0 +1,99 @@
+.footer {
+  
+  color: white;
+  padding: 10px 160px;
+  background-color: rgb(58, 176, 58);
+
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .about {
+      width: 25%;
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 14px;
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      .address {
+        margin-bottom: 5px;
+      }
+
+      .openingHours {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        .clock {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .info {
+        width: 25%;
+      h3 {
+        margin-bottom: 20px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+
+        li {
+            margin-bottom: 7px;
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+      }
+    }
+
+    .payment {
+        width: 25%;
+        h3 {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 50px;
+            margin: 0 10px;
+        }
+    }
+
+    .contact {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            margin-bottom: 20px;
+        }
+        span {
+            margin-bottom: 5px;
+        }
+        .btn__contact {
+            width: 70%;
+            margin-top: 10px;
+            padding: 10px 30px;
+            background-color: #ed392b;
+            color: white;
+            border-radius: 3px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(58, 176, 58);
+              transition: all 0.5s ease;
+            }
+          }
+    }
+  }
+}

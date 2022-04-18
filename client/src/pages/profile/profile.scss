@@ -1,0 +1,147 @@
+.profile {
+  padding: 10px 40px;
+
+  .container {
+    width: 100%;
+    height: auto;
+
+    .content {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .userDetails {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .title {
+          margin-bottom: 25px;
+          font-size: 24px;
+          font-weight: 500;
+          color: rgb(105, 62, 5);
+        }
+
+        form {
+          .formGroup {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+
+            label {
+              margin-bottom: 5px;
+              font-size: 14px;
+              color: rgb(105, 62, 5);
+            }
+
+            input {
+              padding: 0 5px;
+              width: 300px;
+              height: 38px;
+              border: 0.5px solid lightgray;
+              border-radius: 3px;
+            }
+          }
+          .btn__profile {
+            margin-top: 20px;
+            width: 200px;
+            height: 36px;
+            border: none;
+            border-radius: 3px;
+            background: rgb(49, 165, 49);
+            color: white;
+            font-size: 16px;
+            line-height: 1.4;
+            cursor: pointer;
+            transition: background 0.4s ease-in-out;
+            &:hover {
+              background: crimson;
+            }
+          }
+        }
+      }
+      .orderDetails {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          margin-bottom: 25px;
+          font-size: 24px;
+          font-weight: 500;
+          color: rgb(105, 62, 5);
+        }
+        table {
+          table-layout: fixed;
+          width: 100%;
+          border-collapse: collapse;
+          border: 1px solid black;
+
+          thead {
+            th {
+              font-size: 16px;
+              color: rgb(105, 62, 5);
+              border: 1px solid black;
+              padding: 10px;
+              text-align: left;
+            }
+
+            th:nth-child(1) {
+              width: 30%;
+            }
+            th:nth-child(2) {
+              width: 14%;
+            }
+            th:nth-child(3) {
+              width: 14%;
+            }
+            th:nth-child(4) {
+              width: 14%;
+            }
+            th:nth-child(5) {
+              width: 14%;
+            }
+            th:nth-child(6) {
+              width: 14%;
+            }
+          }
+
+          tbody {
+            tr {
+              &:nth-child(odd) {
+                background-color: lightgray;
+                color: black;
+              }
+              &:nth-child(even) {
+                background-color: white;
+                color: black;
+              }
+
+              td {
+                font-size: 14px;
+                padding: 10px 5px;
+                border: 1px solid black;
+                text-align: center;
+                .pay {
+                  color: red;
+                }
+                .delivery {
+                  color: red;
+                }
+
+                button {
+                  border: none;
+                  background: inherit;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

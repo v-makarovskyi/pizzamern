@@ -1,0 +1,121 @@
+.productlistadminpage {
+  padding: 10px 30px;
+
+  .container {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .addProduct {
+      position: absolute;
+      top: 40px;
+      right: 25px;
+      width: 170px;
+      height: 38px;
+      border: none;
+      border-radius: 3px;
+      background-color: crimson;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: rgb(42, 170, 42);
+      }
+    }
+
+    .tableWrapper {
+      width: 100%;
+      height: auto;
+      margin-top: 70px;
+      margin-bottom: 50px;
+
+      .title {
+        margin-bottom: 35px;
+        font-size: 24px;
+        font-weight: 500;
+        color: rgb(105, 62, 5);
+      }
+
+      table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+
+        thead {
+          th {
+            font-size: 16px;
+            color: rgb(105, 62, 5);
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+
+            &:nth-child(1) {
+              width: 24%;
+            }
+            &:nth-child(2) {
+              width: 21%;
+            }
+            &:nth-child(3) {
+              width: 8%;
+            }
+            &:nth-child(4) {
+              width: 8%;
+            }
+            &:nth-child(5) {
+              width: 8%;
+            }
+            &:nth-child(6) {
+              width: 15%;
+            }
+            &:nth-child(7) {
+              width: 10%;
+            }
+            &:nth-child(8) {
+              width: 15%;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            &:nth-child(odd) {
+              background-color: white;
+              color: black;
+            }
+            &:nth-child(even) {
+              background-color: lightgrey;
+              color: black;
+            }
+
+            td {
+              font-size: 14px;
+              padding: 10px 5px;
+              text-align: center;
+              border: 1px solid black;
+
+              .editProduct {
+                margin-right: 25px;
+                background-color: inherit;
+                color: green;
+                border: none;
+                cursor: pointer;
+              }
+
+              .deleteProduct {
+                margin-left: 25px;
+                background-color: inherit;
+                border: none;
+                color: crimson;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

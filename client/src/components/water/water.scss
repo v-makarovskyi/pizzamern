@@ -1,0 +1,88 @@
+.waterContainer {
+    padding: 10px;
+    flex: 1;
+    margin: 20px 25px;
+    max-width: 260px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1);
+    }
+  
+    .imageContainer {
+      margin-top: -30px auto;
+      margin-left: 10px;
+      img {
+        
+        height: 160px;
+        width: 270px;
+      }
+    }
+  
+    p {
+        text-align: center;
+      margin-top: -10px;
+      margin-bottom: 5px;
+      color: rgb(139, 79, 1);
+    }
+
+    .water__details {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .capacity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid grey;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background: rgb(48, 241, 151);
+            color: white;
+            font-size: 14px;
+        }
+    }
+  
+    
+  
+    .cardBuy {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  
+      .cardPrice {
+        span {
+          font-size: 30px;
+        }
+      }
+  
+      .cardBtn {
+        width: 45%;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: lightcoral;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+    }
+  
+  }

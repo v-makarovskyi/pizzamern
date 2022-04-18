@@ -1,0 +1,397 @@
+.cart {
+  padding: 10px 30px;
+
+  .links {
+    font-size: 14px;
+    color: rgb(105, 62, 5);
+    margin-top: 30px;
+    margin-left: 40px;
+    .left {
+      cursor: pointer;
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 20px 80px;
+
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .content__cart {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+          margin-bottom: 30px;
+          font-size: 40px;
+          text-align: center;
+          font-weight: 500;
+          color: rgb(105, 62, 5);
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 56px;
+            height: 16px;
+            left: 45%;
+            bottom: -25px;
+            background: url("https://cipollino.ua/catalog/view/theme/sebian/image/cipollino-title-lines.png")
+              no-repeat center;
+          }
+        }
+
+        &.item {
+          width: 80%;
+          height: auto;
+          margin-top: 30px;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+          border-bottom: 1px solid lightgrey;
+          padding-bottom: 15px;
+
+          .cartitem__left {
+            margin-right: 40px;
+            font-size: 1;
+            width: 100px;
+            height: 100px;
+            img {
+              width: 100%;
+              height: auto;
+              margin-bottom: 5px;
+            }
+            span {
+              font-size: 16px;
+              color: rgb(58, 156, 58);
+              font-weight: 500;
+              margin-left: 23px;
+            }
+          }
+
+          .cartitem__center {
+            margin-top: 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .pizzaTitle {
+              font-size: 14px;
+              color: rgb(105, 62, 5);
+            }
+            .size {
+              margin-top: 5px;
+              font-size: 12px;
+              color: rgb(105, 62, 5);
+            }
+
+            .weight {
+              margin-top: 5px;
+              font-size: 12px;
+              color: rgb(105, 62, 5);
+            }
+            
+          }
+
+          .cartitem__right {
+            margin-top: -10px;
+            display: flex;
+            flex-direction: column;
+
+            .deleteItem {
+              margin-bottom: 10px;
+              width: 120px;
+              padding: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid lightgray;
+              border-radius: 3px;
+              background: red;
+              font-size: 20px;
+              cursor: pointer;
+            }
+
+            .selectQty {
+              margin: 0px 15px 0px 10px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .minus {
+                padding: 10px;
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid lightgrey;
+                border-radius: 10%;
+                background: crimson;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+              }
+              span {
+                color: grey;
+                font-size: 26px;
+                font-weight: 500;
+              }
+
+              .plus {
+                padding: 10px;
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid lightgrey;
+                border-radius: 10%;
+                background: rgb(62, 155, 62);
+                //color: white;
+                font-size: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+          .totalSum {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(80, 180, 88);
+          }
+        }
+        .orderPrice {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          p {
+            margin-right: 50px;
+            font-size: 24px;
+            color: rgb(105, 62, 5);
+            font-weight: 500;
+          }
+          span {
+            font-size: 24px;
+            color: rgb(62, 155, 62);
+          }
+        }
+
+        .discount {
+          display: flex;
+          align-items: center;
+          p {
+            margin-right: 60px;
+            font-size: 24px;
+            color: rgb(105, 62, 5);
+            font-weight: 500;
+          }
+          span {
+            font-size: 24px;
+            color: rgb(62, 155, 62);
+          }
+        }
+
+        .totalPrice {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          p {
+            margin-right: 44px;
+            font-size: 30px;
+            color: rgb(105, 62, 5);
+            font-weight: 700;
+          }
+          span {
+            font-size: 30px;
+            color: crimson;
+          }
+        }
+      }
+
+      button {
+        margin-top: 20px;
+        width: 300px;
+        height: 36px;
+        border: none;
+        border-radius: 3px;
+        background: rgb(49, 165, 49);
+        color: white;
+        font-size: 16px;
+        line-height: 1.4;
+        cursor: pointer;
+        transition: background 0.4s ease-in-out;
+        &:hover {
+          background: crimson;
+        }
+      }
+
+      .content__order {
+        width: 50%;
+        height: auto;
+
+        .title {
+          margin-bottom: 40px;
+          text-align: center;
+          font-size: 40px;
+          font-weight: 500;
+          color: rgb(105, 62, 5);
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 56px;
+            height: 16px;
+            left: 45%;
+            bottom: -25px;
+            background: url("https://cipollino.ua/catalog/view/theme/sebian/image/cipollino-title-lines.png")
+              no-repeat center;
+          }
+        }
+
+        &.wrapper {
+          padding: 30px;
+          width: 90%;
+          border-radius: 5px;
+          background: #fdfdfd;
+          border: 1px solid lightgray;
+
+          .formContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .addressForm {
+              display: flex;
+              flex-direction: column;
+              .formGroup {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+
+                &.top {
+                  label {
+                    font-size: 14px;
+                    color: rgb(105, 62, 5);
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                  }
+                  input {
+                    width: 500px;
+                    height: 38px;
+                    &::placeholder {
+                      color: rgb(105, 62, 5);
+                      padding: 0 5px;
+                      opacity: 0.6;
+                    }
+                  }
+                }
+              }
+              .addressDetails {
+                //width: 100%;
+                &.wrapper {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  .formGroup-bottom {
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                      font-size: 14px;
+                      color: rgb(105, 62, 5);
+                      font-weight: 500;
+                      margin-bottom: 5px;
+                    }
+                    input {
+                      width: 230px;
+                      height: 38px;
+                      &::placeholder {
+                        color: rgb(105, 62, 5);
+                        padding: 0 5px;
+                        opacity: 0.6;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+              .payment {
+                padding: 10px 20px;
+
+                p {
+                  text-align: center;
+                  text-transform: uppercase;
+                  color: rgb(105, 62, 5);
+                  font-weight: bold;
+                }
+                &.wrapper {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  .custom__radio {
+                    margin: 0 20px;
+                    input[type="radio"] {
+                      position: absolute;
+                      opacity: 0;
+                      + .option__label {
+                        color: rgb(105, 62, 5);
+                        &::before {
+                          content: "";
+                          background: white;
+                          border-radius: 50%;
+                          display: inline-block;
+                          border: 1px solid lightgray;
+                          width: 1.4em;
+                          height: 1.4em;
+                          position: relative;
+                          top: -0.2em;
+                          vertical-align: top;
+                          text-align: center;
+                          margin-right: 1em;
+                          transition: all 250ms ease-in-out;
+                          cursor: pointer;
+                        }
+                      }
+                      &:disabled {
+                        + .option__label {
+                          &::before {
+                            cursor: no-drop;
+                            box-shadow: inset 0 0 0 4px white;
+                            background: lightgray;
+                          }
+                        }
+                      }
+
+                      &:checked {
+                        + .option__label {
+                          &::before {
+                            cursor: pointer;
+                            background-color: crimson;
+                            box-shadow: inset 0 0 0 4px white;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            
+          }
+        }
+      }
+    }
+  }
+}

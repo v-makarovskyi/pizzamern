@@ -1,0 +1,93 @@
+.orderlistadminpage {
+    margin: 10px 40px;
+    padding: 10px 30px;
+
+    .container {
+        width: 90%;
+        height: auto;
+        min-height: 250px;
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            align-self: start;   
+           margin-bottom: 35px;
+           font-size: 24px;
+           font-weight: 500;
+           color: rgb(105, 62, 5);
+           }
+
+    }
+    table {
+        
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid grey;
+
+        thead {
+            th {
+              font-size: 16px;
+              color: rgb(105, 62, 5);
+              border: 1px solid black;
+              padding: 10px;
+              text-align: left;
+  
+              &:nth-child(1) {
+                width: 20%;
+              }
+              &:nth-child(2) {
+                width: 11%;
+              }
+              &:nth-child(3) {
+                width: 11%;
+              }
+              &:nth-child(4) {
+                width: 11%;
+              }
+              &:nth-child(5) {
+                width: 11%;
+              }
+              &:nth-child(5) {
+                width: 11%;
+              }
+              &:nth-child(5) {
+                width: 11%;
+              }
+             
+            }
+          }
+          tbody {
+            tr {
+              &:nth-child(odd) {
+                background-color: white;
+                color: black;
+              }
+              &:nth-child(even) {
+                background-color: lightgrey;
+                color: black;
+              }
+  
+              td {
+                font-size: 14px;
+                padding: 10px 5px;
+                text-align: center;
+                border: 1px solid black;
+                .pay {
+                    color: red;
+                }
+                .delivery {
+                    color: red;
+                }
+                .orderDetails {
+                    border: none;
+                    background: inherit;
+                    cursor: pointer;
+                }
+              }
+            }
+          }
+    }
+}

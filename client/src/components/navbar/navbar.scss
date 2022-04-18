@@ -1,0 +1,268 @@
+header {
+  width: 100%;
+  font-size: 14px;
+  position: sticky;
+  z-index: 999;
+
+  .navbar__top {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    padding: 0 70px;
+    background-color: rgb(58, 176, 58);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 999;
+
+    &-left {
+      width: 30%;
+      display: flex;
+      align-items: center;
+    }
+
+    &-center {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .facebook {
+        font-size: 30px;
+        margin-right: 5px;
+        &:hover {
+          color: blue;
+        }
+      }
+      .instagram {
+        font-size: 30px;
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+
+    &-right {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      span {
+        margin: 0 20px;
+        cursor: pointer;
+      }
+
+      .admin {
+        margin-right: 30px;
+        cursor: pointer;
+        &.top {
+          display: flex;
+          align-items: center;
+        }
+        .options {
+          display: none;
+          background-color: rgb(245, 90, 90);
+          border-radius: 3px;
+          border: 1px solid red;
+        }
+        &:hover {
+          .options {
+            position: absolute;
+            top: 35px;
+            right:5%;
+            display: flex;
+            flex-direction: column;
+            &-item {
+              display: flex;
+              align-items: center;
+              height: 30px;
+              span {
+                padding: 10px;
+                cursor: pointer;
+              }
+              &:hover {
+                background: white;
+                span {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .profile {
+        cursor: pointer;
+
+        &.top {
+          display: flex;
+          align-items: center;
+
+          .title {
+            margin-left: 5px;
+          }
+        }
+        .options {
+          display: none;
+          background-color: rgb(245, 90, 90);
+          border-radius: 3px;
+          border: 1px solid red;
+        }
+        &:hover {
+          .options {
+            position: absolute;
+            top: 40px;
+            right: 20.5%;
+            display: flex;
+            flex-direction: column;
+            &-item {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              height: 30px;
+              span {
+                padding: 10px;
+                cursor: pointer;
+              }
+              &:hover {
+                background: white;
+                span {
+                  color: red;
+                }
+              }
+            }
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar__center {
+    position: static;
+    border-bottom: 1px dashed grey;
+    padding: 15px 50px 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-contact {
+      display: flex;
+      flex-direction: column;
+
+      .center__contact-item {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        .contact__img {
+          width: 30px;
+          height: 30px;
+          margin-right: 7px;
+        }
+
+        .tel {
+          font-size: 16px;
+           .green {
+          color: rgb(58, 176, 58);
+          font-weight: bold;
+        }
+        }
+       
+      }
+
+      .btn__contact {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #ed392b;
+        color: white;
+        border-radius: 3px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(58, 176, 58);
+          transition: all 0.5s ease;
+        }
+      }
+    }
+
+    &-logo {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      .green {
+        color: rgb(58, 176, 58);
+        text-shadow: 1px 1px 1px rgb(58, 176, 58);
+      }
+
+      .red {
+        color: #ed392b;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+
+      .cart {
+        margin-bottom: 20px;
+        border-bottom: 1px dashed grey;
+        padding-bottom: 5px;
+        h2 {
+          color: rgb(58, 176, 58);
+          margin-bottom: 20px;
+        }
+
+        .price {
+          font-size: 25px;
+          font-weight: bold;
+          margin-left: 20px;
+        }
+      }
+
+      .delivery {
+        display: flex;
+        align-items: center;
+        .shipping {
+          color: green;
+          font-size: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .navbar__bottom {
+    cursor: pointer;
+    padding-top: 10px;
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      list-style: none;
+
+      li {
+        position: relative;
+        display: inline-block;
+        z-index: 999;
+
+        span {
+          font-size: 18px;
+          padding: 0 10px;
+          color: grey;
+          &:hover {
+            color: rgb(58, 176, 58);
+            font-weight: bold;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

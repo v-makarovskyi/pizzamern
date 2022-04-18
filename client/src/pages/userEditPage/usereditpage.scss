@@ -1,0 +1,96 @@
+.usereditpage {
+    padding: 10px 30px;
+    position: relative;
+
+    .goBack {
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        width: 10%;
+        height: 38px;
+        border: none;
+        border-radius: 3px;
+        background: yellow;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background .3s ease-in-out;
+
+        &:hover {
+            background: rgb(37, 172, 37);
+        }
+    }
+
+    .container {
+        margin-bottom: 50px;
+        margin-top: 100px;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {  
+           margin-bottom: 20px;
+           font-size: 24px;
+           font-weight: 500;
+           color: rgb(105, 62, 5);
+        }
+        form {
+            .formGroup {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                label {
+                    font-size: 14px;
+                    color: rgb(105, 62, 5);
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                } 
+
+                input {
+                    width: 300px;
+                    height: 38px;
+                    &::placeholder {
+                      color: rgb(105, 62, 5);
+                      padding: 0 5px;
+                      opacity: 0.6;
+                    }
+                  }
+                &__isAdmin {
+                    display: flex;
+                    align-items: center;
+                    input {
+                        margin-right: 10px;
+                    }
+                    label {
+                    font-size: 14px;
+                    color: rgb(105, 62, 5);
+                    font-weight: 500; 
+                    }
+                }
+            }
+            .btn-form {
+                margin-top: 30px;
+                width: 50%;
+                height: 38px;
+                border: none;
+                border-radius: 3px;
+                background: rgb(37, 172, 37);
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background .3s ease-in-out;
+
+                &:hover {
+                    background: crimson;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.container {
+  padding: 10px 30px;
+  width: 600px;
+  height: 40px;
+  color: white;
+
+  .classDanger {
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    background: red;
+    text-align: center;
+    font-size: 18px;
+    .messageDanger {
+      color: white;
+    }
+  }
+
+  .classSuccess {
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    background: rgb(29, 129, 67);
+    text-align: center;
+    font-size: 18px;
+    .messageDanger {
+      color: white;
+    }
+  }
+}
